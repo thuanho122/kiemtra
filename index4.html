@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>câu 4</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            constructor(name, weight) {
+                this.name = name;
+                this.weight = weight;
+            }
+            getName() {
+                alert(this.name);
+            }
+            getWeight() {
+                alert(this.weight);
+            }
+            setName(newName) {
+                this.name = newName;
+            }
+            setWeight(newWeight) {
+                this.weight = newWeight;
+            }
+            toString() {
+                return "name: " + this.name + ",weight" + this.weight
+            }
+        }
+        const objAnimal1 = new Animal("Elephant", 45.6);
+        objAnimal1.toString();
+        const objAnimal2 = new Animal("Dog", 10);
+        objAnimal2.setName('Mouse');
+        console.log(objAnimal2);
+
+
+    </script>
+</body>
+
+</html>

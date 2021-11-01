@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>câu 3</title>
+</head>
+
+<body>
+    <script>
+        function IntegerCheck(arr) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == "a" || arr[i] == "o" || arr[i] == "e" || arr[i] == "u" || arr[i] == "i") {
+                    count++;
+                }
+            }
+            if (count > 0) {
+                return count;
+                console.log(console);
+            }
+            else {
+                return false;
+                console.log(false)
+            }
+        }
+        let text = prompt('nhập chuỗi kí tự');
+        let arrtext = Array.from(text);
+        console.log(IntegerCheck(arrtext));
+    </script>
+</body>
+
+</html>
